@@ -23,7 +23,6 @@ const Coversingle = () => {
       const response = await rawg.gameSigle(418467);
       // ...
       setGamelist(response);
-      console.log(response);
     }
     fetchData();
   }, []);

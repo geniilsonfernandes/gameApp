@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .nav__logo {
     margin-right: auto;
@@ -21,36 +22,12 @@
     width: 40%;
     max-width: 350px;
     height: 36px;
-    background: #202528;
     
+    position: relative;
     display: flex;
     align-items: center;
-    overflow: hidden;
-}
-.nav__input input {
-    border: none;
-    outline: none;
-    background: transparent;
-    height: 100%;
-    width: 90%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    display: block;
-    color: #e7e7e7;
-    padding: 0 16px;
-    
 }
 
-.inputIcon{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    background: #272e31;
-    height: 100%;
-    transition: all ease-in-out 200ms;
-}
 .inputIcon:hover{
     background: #2a3033;
 }

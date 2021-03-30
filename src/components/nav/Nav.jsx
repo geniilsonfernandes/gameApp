@@ -1,21 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 //css
 import styles from "./nav.module.css";
 import global from "../../styles/global.module.css";
 //svg
 import Logo from "../../svg/nav/Logo";
 import Favorite from "../../svg/nav/FavoriteSvg";
-import InputNav from "./InputNav";
-import SearchSvg from "../../svg/nav/SearchSvg";
+//import InputNav from "./InputNav/InputNav";
 import { Link } from "react-router-dom";
 
 // comp
 const Nav = (props) => {
-  const [searchValue, setSeachValue] = useState("");
-  const handlerChanger = (e) => {
-    setSeachValue(e.target.value);
-  };
-
+  
   return (
     <section className={global.mwfix}>
       <nav className={styles.nav}>
@@ -24,14 +19,7 @@ const Nav = (props) => {
           
         </div>
         <div className={styles.nav__input}>
-          <InputNav
-            placeholder="Search game..."
-            value={searchValue}
-            onChange={handlerChanger}
-          />
-          <span className={styles.inputIcon}>
-            <SearchSvg />
-          </span>
+          {/* <InputNav /> */}
         </div>
         <div className={styles.nav__favorites}>
           <Favorite />

@@ -7,7 +7,6 @@ import XboxSvg from "../../../svg/cover/XboxSvg";
 
 const GamePlatforms = (props) => {
   const { platforms } = props;
-  console.log(platforms);
   return (
     <>
       {platforms.map((item,id) => {

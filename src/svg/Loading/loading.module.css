@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     animation: rotate 1.5s linear infinite;
+    stroke-dashoffset: 100;
 }
 
 @keyframes rotate {

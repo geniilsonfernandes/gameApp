@@ -39,19 +39,6 @@ const CategorieTittle = () => {
           ...
         </p>
       )}
-
-      <div className={styles.listControl}>
-        <div className={styles.order}>
-          <h3>Order</h3>
-
-          <select className={styles.orderOption} id="cars">
-            <option value="volvo">nome</option>
-            <option value="saab">data</option>
-            <option value="opel">rate</option>
-            <option value="audi">votes</option>
-          </select>
-        </div>
-      </div>
     </div>
   );
 };

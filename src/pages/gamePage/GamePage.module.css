@@ -146,7 +146,7 @@ header::after {
     }
     .rightContent {
         flex: 0 0 100%;
-    
+        margin-top: 24px;
     }
     .leftContent {
         flex: 0 0 100%;

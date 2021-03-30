@@ -6,7 +6,7 @@ import rawg from "../../data/rawg";
 import { useParams } from "react-router-dom";
 
 import GameTitle from "./GameTitle/GameTitle";
-import GameTags from "./GameTags/GameTags";
+import GameAttributes from "./GameAttributes/GameAttributes";
 
 const GamePage = () => {
   const params = useParams();
@@ -23,7 +23,6 @@ const GamePage = () => {
     }
     fetchData();
   }, [params]);
-
   return (
     <>
       <header>
@@ -36,7 +35,13 @@ const GamePage = () => {
           </div>
 
           <div className={styles.rightContent}>
-          <GameTags tags={game.tags} load={loading} />
+            <GameAttributes platforms={game.platforms}
+            genres={game.genres}
+            developers={game.developers}
+            publishers={game.publishers}
+            released={game.released}
+            website={game.website}
+            load={loading} />
           </div>
         </div>
       </div>
